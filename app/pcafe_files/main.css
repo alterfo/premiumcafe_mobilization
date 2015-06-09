@@ -671,10 +671,10 @@ a.pagebutton .icon {
 }
 
 .sitemenu { 
-    /* height: 105px; */
+    height: 130px; 
     margin-bottom: 30px;
     /* padding: 0 20px 0 140px; */
-    
+
     z-index: 5;
     font-size: 20px;
     line-height: 1;
@@ -1194,7 +1194,7 @@ a.pagebutton .icon {
 #section_home .promo-ul {
     text-align: center;
     position: relative;
-    margin: 40px 0;
+    margin: 42px 0;
     padding: 0;
     float: left;
     /* width: 670px; */
@@ -5261,7 +5261,7 @@ select {
 
 .row {
     margin: 0 auto;
-    max-width: 62.5rem;
+    max-width: 64.5rem;
     width: 100%
 }
 
