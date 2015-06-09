@@ -47,6 +47,11 @@ gulp.task('html', function () {
 //     .pipe(connect.reload());
 // });
 
+
+gulp.task('css', function() {
+  return connect.reload();
+});
+
 // Minify images
 gulp.task('imagemin', function () {
   return es.concat(
@@ -86,6 +91,7 @@ gulp.task('scripts', ['coffee'], function () {
 
 gulp.task('watch', function () {
   gulp.watch([ 'app/styles/**/*.scss'], ['sass']);
+  gulp.watch([ 'app/styles/**/*.css'], ['css']);
   gulp.watch([ 'app/scripts' + '/**/*.js'], ['scripts']);
   gulp.watch(['./app/**/*.html'], ['html']);
 });
