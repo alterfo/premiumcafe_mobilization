@@ -64,6 +64,12 @@ body {
     line-height: 1.231;
 }
 
+::-moz-selection {
+    color: #FFF;
+    background: #930;
+    text-shadow: none;
+}
+
 ::selection {
     color: #FFF;
     background: #930;
@@ -80,10 +86,7 @@ a {
     color: #C96;
     outline: 0;
     text-decoration: none;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -107,15 +110,20 @@ h4 {
 }
 
 .big-pompadur {
-    margin: 0 0 0.5em 0;
+    /* margin: 0 0 0.5em 0; */
     line-height: 1;
     color: #FF6;
-    font-family: Pompadur;
-    font-size: 50px;
-    font-weight: bold;
+    font-family: Times New Roman, serif; 
+    font-size: 36px;
+    /*font-weight: bold;*/
     font-style: normal;
     text-align: center;
-    text-shadow: 0 2px 2px #000;
+    text-shadow: 0 5px 5px #000;
+    padding: 40px 0;
+}
+
+.big-pompadur .pagelink {
+    /*font-weight: bold;*/
 }
 
 h1,
@@ -334,8 +342,6 @@ input[type="radio"] {
 input[type="search"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -388,14 +394,8 @@ section,
     position: relative;
     padding: 20px;
     background: url("http://premiumcafe.ru/assets/img/bg2.jpg") repeat;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
     border-radius: 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: inset 0 0 10px #100;
-    -webkit-box-shadow: inset 0 0 10px #100;
     box-shadow: inset 0 0 10px #100;
 }
 
@@ -422,14 +422,8 @@ section,
     padding: 10px;
     background: url("http://premiumcafe.ru/assets/img/bg1red_.jpg");
     text-shadow: 0 1px 1px #000;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 3px #100;
-    -webkit-box-shadow: 0 0 3px #100;
     box-shadow: 0 0 3px #100;
 }
 
@@ -542,14 +536,8 @@ section,
     overflow: hidden;
     text-align: left;
     border: 1px solid #000;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 3px #000;
-    -webkit-box-shadow: 0 0 3px #000;
     box-shadow: 0 0 3px #000;
 }
 
@@ -570,16 +558,9 @@ section,
     background-color: #FC9;
     opacity: 0.4;
     filter: alpha(opacity=40);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -592,11 +573,7 @@ section,
     padding: 10px 15px;
     background-color: rgba(20, 0, 0, 0.7);
     -pie-background: rgba(20, 0, 0, 0.7);
-    -moz-border-radius: 0 0 10px 10px;
-    -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -609,10 +586,7 @@ section,
     font-size: 13px;
     color: #C96;
     overflow: hidden;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -632,19 +606,10 @@ a.pagebutton {
     color: #FFC;
     background: url("http://premiumcafe.ru/assets/img/bg_button1.png") repeat-x 0 -45px #900;
     text-shadow: 0 -1px 1px #000;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 5px #000, 0 0 3px #660000 inset;
-    -webkit-box-shadow: 0 0 5px #000, 0 0 3px #660000 inset;
     box-shadow: 0 0 5px #000, 0 0 3px #660000 inset;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -654,8 +619,6 @@ a.pagebutton {
 a.pagebutton.eco,
 a.pagebutton.submit {
     background: url("http://premiumcafe.ru/assets/img/bg_button2.png") repeat-x 0 -45px #090;
-    -moz-box-shadow: 0 0 5px #000, 0 0 3px #006600 inset;
-    -webkit-box-shadow: 0 0 5px #000, 0 0 3px #006600 inset;
     box-shadow: 0 0 5px #000, 0 0 3px #006600 inset;
 }
 
@@ -707,20 +670,15 @@ a.pagebutton .icon {
     min-height: 100%;
 }
 
-.sitemenu {
-    /* /* height: 105px; */
-    
-    */ margin-bottom: 30px;
+.sitemenu { 
+    /* height: 105px; */
+    margin-bottom: 30px;
     /* padding: 0 20px 0 140px; */
     
     z-index: 5;
     font-size: 20px;
     line-height: 1;
-    -moz-border-radius: 0 0 20px 20px;
-    -webkit-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     text-shadow: 0 1px 1px #000;
 }
@@ -733,14 +691,8 @@ a.pagebutton .icon {
     display: block;
     padding: 12px 10px;
     background: url("http://premiumcafe.ru/assets/img/bg2red.jpg") 0 bottom;
-    -moz-border-radius: 0 0 20px 20px;
-    -webkit-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 1px 5px #000;
-    -webkit-box-shadow: 0 1px 5px #000;
     box-shadow: 0 1px 5px #000;
 }
 
@@ -767,7 +719,8 @@ a.pagebutton .icon {
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 }
 
 .sitemenu-img1,
@@ -776,10 +729,7 @@ a.pagebutton .icon {
     width: 75px;
     height: 60px;
     background-image: url("http://premiumcafe.ru/assets/img/interface.png");
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -873,14 +823,8 @@ a.pagebutton .icon {
     padding: 10px;
     background: url("http://premiumcafe.ru/assets/img/bg2red.jpg") repeat scroll 0 top transparent;
     font-size: 20px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 1px 5px #000;
-    -webkit-box-shadow: 0 1px 5px #000;
     box-shadow: 0 1px 5px #000;
 }
 
@@ -905,10 +849,7 @@ a.pagebutton .icon {
 .sitemenu-extra-phones {
     height: 0;
     overflow: hidden;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -940,10 +881,7 @@ a.pagebutton .icon {
     content: "";
     opacity: 0;
     filter: alpha(opacity=0);
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -955,18 +893,11 @@ a.pagebutton .icon {
     content: attr(data-title);
     background: #000;
     font-size: 15px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     opacity: 0;
     filter: alpha(opacity=0);
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -1035,11 +966,7 @@ a.pagebutton .icon {
     /* bottom: 0; */
     /* right: 0; */
     font-size: 14px;
-    -moz-border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
     border-radius: 20px 20px 0 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -1107,10 +1034,7 @@ a.pagebutton .icon {
     background: url("http://premiumcafe.ru/assets/img/interface.png") -610px 0;
     opacity: 0;
     filter: alpha(opacity=0);
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -1141,10 +1065,7 @@ a.pagebutton .icon {
     opacity: 1;
     filter: alpha(opacity=100);
     visibility: visible;
-    -moz-transition: all 0.3s 0s;
-    -o-transition: all 0.3s 0s;
     -webkit-transition: all 0.3s 0s;
-    -ms-transition: all 0.3s 0s;
     transition: all 0.3s 0s;
 }
 
@@ -1177,10 +1098,7 @@ a.pagebutton .icon {
     opacity: 0;
     filter: alpha(opacity=0);
     visibility: hidden;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -1194,10 +1112,7 @@ a.pagebutton .icon {
     opacity: 0;
     filter: alpha(opacity=0);
     visibility: hidden;
-    -moz-transition: all 0.3s 1s;
-    -o-transition: all 0.3s 1s;
     -webkit-transition: all 0.3s 1s;
-    -ms-transition: all 0.3s 1s;
     transition: all 0.3s 1s;
 }
 
@@ -1205,10 +1120,7 @@ a.pagebutton .icon {
     opacity: 1;
     filter: alpha(opacity=100);
     visibility: visible;
-    -moz-transition: all 0.3s 0s;
-    -o-transition: all 0.3s 0s;
     -webkit-transition: all 0.3s 0s;
-    -ms-transition: all 0.3s 0s;
     transition: all 0.3s 0s;
 }
 
@@ -1278,7 +1190,7 @@ a.pagebutton .icon {
 #section_home .promo-ul {
     text-align: center;
     position: relative;
-    margin: 0;
+    margin: 40px 0;
     padding: 0;
     float: left;
     /* width: 670px; */
@@ -1288,11 +1200,7 @@ a.pagebutton .icon {
     /* background: url("http://premiumcafe.ru/assets/img/promo.jpg") no-repeat center center; */
     
     border: 1px solid #210;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
+    /*border-radius: 10px;*/
     background-clip: padding-box;
 }
 
@@ -1313,11 +1221,7 @@ a.pagebutton .icon {
     /* max-width: 500px; */
     
     height: 100%;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -1326,9 +1230,10 @@ a.pagebutton .icon {
     /* margin: 0 0 0 10px; */
     /* padding: 0; */
     /* vertical-align: top; */
-    /* width: 256px; */
+     width: 300px; 
     
     list-style: none;
+    margin-left: 20px;
 }
 
 #section_home .features-li {
@@ -1338,42 +1243,27 @@ a.pagebutton .icon {
     border: 1px solid #210;
     border-bottom: none;
     background: url("http://premiumcafe.ru/assets/img/bg2red.jpg") repeat;
+    position: relative;
 }
 
 #section_home .features-li.first {
-    -moz-border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #section_home .features-li.first a {
-    -moz-border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #section_home .features-li.last {
     border-bottom: 1px solid #210;
-    -moz-border-radius: 0 0 10px 10px;
-    -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #section_home .features-li.last a {
-    -moz-border-radius: 0 0 10px 10px;
-    -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -1394,9 +1284,8 @@ a.pagebutton .icon {
     
     color: #FFC;
     font-size: 16px;
-    -moz-box-shadow: inset 0 1px 2px rgba(250, 200, 150, 0.3);
-    -webkit-box-shadow: inset 0 1px 2px rgba(250, 200, 150, 0.3);
     box-shadow: inset 0 1px 2px rgba(250, 200, 150, 0.3);
+
 }
 
 #section_home .features-li:hover,
@@ -1404,9 +1293,16 @@ a.pagebutton .icon {
 #section_home .features-a.active {
     color: #FF0;
     background: rgba(255, 100, 0, 0.3);
-    transition: all .03s linear;
+    -webkit-transition: all .03s linear;
+            transition: all .03s linear;
     /* transform: scale(1.1); */
 }
+
+.features-li__text {
+  margin-left: 40px;
+  display: block;
+}
+
 
 #section_home .features-a:hover .icon-hover,
 #section_home .features-a:focus .icon-hover,
@@ -1496,10 +1392,7 @@ a.pagebutton .icon {
     width: 32px;
     height: 32px;
     background-image: url("http://premiumcafe.ru/assets/img/interface.png");
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
     behavior: url(http://premiumcafe.ru/assets/htc/PIE.htc);
 }
@@ -1516,6 +1409,11 @@ a.pagebutton .icon {
     height: 32px;
     float: left;
     margin-right: 10px;
+    /* vertical-align: middle; */
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+
 }
 
 #section_home .news-and-comments {
@@ -1595,11 +1493,7 @@ a.pagebutton .icon {
     text-align: center;
     background-color: rgba(20, 0, 0, 0.7);
     -pie-background: rgba(20, 0, 0, 0.7);
-    -moz-border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -1777,10 +1671,7 @@ a.pagebutton .icon {
 
 #section_menu .calculate .col5 {
     width: 100px;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
     -webkit-transition: all .5s;
-    -ms-transition: all .5s;
     transition: all .5s;
 }
 
@@ -1790,17 +1681,15 @@ a.pagebutton .icon {
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 }
 
 #section_menu .calculate .section-sum {
     display: block;
     padding-right: 20px;
     color: #C96;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -1815,10 +1704,7 @@ a.pagebutton .icon {
 
 #section_menu .dish-counter {
     text-align: right;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -1890,11 +1776,7 @@ a.pagebutton .icon {
     padding: 5px;
     width: 150px;
     background: url("http://premiumcafe.ru/assets/img/bg1red.jpg") repeat;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     font-size: 16px;
 }
@@ -1902,21 +1784,13 @@ a.pagebutton .icon {
 #section_menu .menu-item .menu-item-thumb {
     margin-bottom: 5px;
     background: url("http://premiumcafe.ru/assets/img/bg1.jpg") repeat;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #section_menu .menu-item .menu-item-img {
     width: 150px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -1930,10 +1804,7 @@ a.pagebutton .icon {
 
 #section_menu .comments article {
     padding: 1em 20px;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -2104,11 +1975,7 @@ a.pagebutton .icon {
     background-color: #987;
     overflow: hidden;
     border: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -2119,18 +1986,11 @@ a.pagebutton .icon {
 
 #section_gallery .gallery img {
     border: 1px solid #000;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     opacity: 0.7;
     filter: alpha(opacity=70);
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -2168,28 +2028,16 @@ a.pagebutton .icon {
     float: right;
     margin: 0 0 0 20px;
     border: 1px solid;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 3px #100;
-    -webkit-box-shadow: 0 0 3px #100;
     box-shadow: 0 0 3px #100;
 }
 
 #section_banket .tables {
     border: 1px solid;
     background-color: #FEC;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 3px #100;
-    -webkit-box-shadow: 0 0 3px #100;
     box-shadow: 0 0 3px #100;
 }
 
@@ -2208,10 +2056,7 @@ a.pagebutton .icon {
 
 #section_banket .comments article {
     padding: 1em 20px;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -2271,11 +2116,7 @@ a.pagebutton .icon {
     padding: 5px;
     width: 150px;
     background: url("http://premiumcafe.ru/assets/img/bg1red.jpg") repeat;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     font-size: 16px;
 }
@@ -2410,21 +2251,13 @@ a.pagebutton .icon {
 #section_shop .menu-item .menu-item-thumb {
     margin-bottom: 5px;
     background: url("http://premiumcafe.ru/assets/img/bg1.jpg") repeat;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #section_shop .menu-item .menu-item-img {
     width: 150px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -2570,7 +2403,8 @@ a.pagebutton .icon {
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 }
 
 #section_shop .section-sum {
@@ -2578,10 +2412,7 @@ a.pagebutton .icon {
     padding-right: 20px;
     color: #C96;
     text-align: right;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -2682,10 +2513,7 @@ a.pagebutton .icon {
 
 #section_shop .comments article {
     padding: 1em 20px;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -2756,10 +2584,7 @@ a.pagebutton .icon {
 
 #page_shop-index .comments article {
     padding: 1em 20px;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -2794,11 +2619,7 @@ a.pagebutton .icon {
     float: right;
     margin: 0 0 10px 20px;
     border: 1px solid #6C0;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -2836,10 +2657,7 @@ a.pagebutton .icon {
 
 #page_info-comments .comments article {
     padding: 1em 20px;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -2904,14 +2722,8 @@ a.pagebutton .icon {
     top: 10%;
     background: url(http://premiumcafe.ru/assets/img/bg0.jpg) 0 0;
     border: 1px solid #000;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
     border-radius: 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-box-shadow: 0 0 5px #000;
-    -webkit-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
 }
 
@@ -2923,11 +2735,7 @@ a.pagebutton .icon {
     height: 100%;
     opacity: 0.7;
     filter: alpha(opacity=70);
-    -moz-border-radius: 18px;
-    -webkit-border-radius: 18px;
     border-radius: 18px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -2941,11 +2749,7 @@ a.pagebutton .icon {
     font-size: 17px;
     text-align: center;
     text-shadow: 0 1px 1px #000;
-    -moz-border-radius: 0 0 20px 20px;
-    -webkit-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -2969,10 +2773,7 @@ a.pagebutton .icon {
     background-position: left center;
     opacity: 0.5;
     filter: alpha(opacity=50);
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3071,10 +2872,7 @@ a.pagebutton .icon {
     display: block;
     margin-bottom: 3px;
     padding-left: 3px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3090,10 +2888,7 @@ a.pagebutton .icon {
     margin-bottom: 10px;
     opacity: 0.3;
     filter: alpha(opacity=30);
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3144,20 +2939,14 @@ a.pagebutton .icon {
     margin-right: 7px;
     padding: 1px;
     outline: 1px dotted #654;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .section-dialog .target label img {
     opacity: 0;
     filter: alpha(opacity=0);
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3180,16 +2969,9 @@ a.pagebutton .icon {
     color: #630;
     background-color: #FEC;
     border: 1px solid;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3269,8 +3051,6 @@ a.pagebutton .icon {
     width: auto;
     height: auto;
     visibility: visible;
-    -moz-box-shadow: 0 0 3px #000;
-    -webkit-box-shadow: 0 0 3px #000;
     box-shadow: 0 0 3px #000;
 }
 
@@ -3343,10 +3123,7 @@ a.pagebutton .icon {
 }
 
 #viewer .button {
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -3356,10 +3133,7 @@ a.pagebutton .icon {
     width: 27px;
     height: 27px;
     background: url("http://premiumcafe.ru/assets/img/interface.png") -40px -147px no-repeat;
-    -moz-transition: background-position 0s;
-    -o-transition: background-position 0s;
     -webkit-transition: background-position 0s;
-    -ms-transition: background-position 0s;
     transition: background-position 0s;
 }
 
@@ -3373,22 +3147,14 @@ a.pagebutton .icon {
 #viewer .button.prev {
     left: 0;
     background: #000 url("http://premiumcafe.ru/assets/img/arrow_left.png") no-repeat right center;
-    -moz-border-radius: 0 20px 20px 0;
-    -webkit-border-radius: 0 20px 20px 0;
     border-radius: 0 20px 20px 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
 #viewer .button.next {
     right: 0;
     background: #000 url("http://premiumcafe.ru/assets/img/arrow_right.png") no-repeat left center;
-    -moz-border-radius: 20px 0 0 20px;
-    -webkit-border-radius: 20px 0 0 20px;
     border-radius: 20px 0 0 20px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 
@@ -3684,7 +3450,8 @@ a.pagebutton .icon {
 .ui-datepicker-cover {
     position: absolute;
     z-index: -1;
-    filter: mask();
+    -webkit-filter: mask();
+            filter: mask();
     top: -4px;
     left: -4px;
     width: 200px;
@@ -4645,8 +4412,6 @@ a.pagebutton .icon {
 .ui-corner-top,
 .ui-corner-left,
 .ui-corner-tl {
-    -moz-border-radius-topleft: 6px;
-    -webkit-border-top-left-radius: 6px;
     -khtml-border-top-left-radius: 6px;
     border-top-left-radius: 6px;
 }
@@ -4655,8 +4420,6 @@ a.pagebutton .icon {
 .ui-corner-top,
 .ui-corner-right,
 .ui-corner-tr {
-    -moz-border-radius-topright: 6px;
-    -webkit-border-top-right-radius: 6px;
     -khtml-border-top-right-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -4665,8 +4428,6 @@ a.pagebutton .icon {
 .ui-corner-bottom,
 .ui-corner-left,
 .ui-corner-bl {
-    -moz-border-radius-bottomleft: 6px;
-    -webkit-border-bottom-left-radius: 6px;
     -khtml-border-bottom-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
@@ -4675,8 +4436,6 @@ a.pagebutton .icon {
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-bottom-right-radius: 6px;
     -khtml-border-bottom-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
@@ -4693,9 +4452,7 @@ a.pagebutton .icon {
     background: #aaa url(images/ui-bg_flat_75_aaaaaa_40x100.png) 50% 50% repeat-x;
     opacity: .3;
     filter: Alpha(Opacity=30);
-    -moz-border-radius: 8px;
     -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
     border-radius: 8px;
 }
 
@@ -4709,10 +4466,7 @@ a.pagebutton .icon {
 
 .ui-datepicker a {
     border-bottom: none;
-    -moz-transition: none;
-    -o-transition: none;
     -webkit-transition: none;
-    -ms-transition: none;
     transition: none;
 }
 
@@ -5191,7 +4945,7 @@ a.pagebutton .icon {
     display: table;
 }
 
-.clearfix:after {
+.clearfix:after { 
     clear: both;
 }
 
@@ -5205,7 +4959,8 @@ a.pagebutton .icon {
         color: black !important;
         box-shadow: none !important;
         text-shadow: none !important;
-        filter: none !important;
+        -webkit-filter: none !important;
+                filter: none !important;
         -ms-filter: none !important;
     }
     a,
@@ -5409,8 +5164,6 @@ html {
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit
 }
 
@@ -6588,7 +6341,8 @@ button,
     background-color: #008CBA;
     border-color: #007095;
     color: #fff;
-    transition: background-color 300ms ease-out
+    -webkit-transition: background-color 300ms ease-out;
+            transition: background-color 300ms ease-out
 }
 
 button:hover,
@@ -7208,13 +6962,8 @@ textarea {
     margin: 0 0 1rem 0;
     padding: 0.5rem;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: border-color 0.15s linear, background 0.15s linear;
-    -moz-transition: border-color 0.15s linear, background 0.15s linear;
-    -ms-transition: border-color 0.15s linear, background 0.15s linear;
-    -o-transition: border-color 0.15s linear, background 0.15s linear;
     transition: border-color 0.15s linear, background 0.15s linear
 }
 
@@ -7793,7 +7542,8 @@ meta.foundation-mq-topbar {
     left: 0;
     position: relative;
     width: auto;
-    transition: left 300ms ease-out
+    -webkit-transition: left 300ms ease-out;
+            transition: left 300ms ease-out
 }
 
 .top-bar-section ul {
@@ -8198,7 +7948,8 @@ meta.foundation-mq-topbar {
         max-width: 62.5rem
     }
     .top-bar-section {
-        transition: none 0 0;
+        -webkit-transition: none 0 0;
+                transition: none 0 0;
         left: 0 !important
     }
     .top-bar-section ul {
@@ -8464,7 +8215,8 @@ meta.foundation-mq-topbar {
     margin-bottom: 1.25rem;
     padding: 0.875rem 1.5rem 0.875rem 0.875rem;
     position: relative;
-    transition: opacity 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out;
+            transition: opacity 300ms ease-out;
     background-color: #008CBA;
     border-color: #0078a0;
     color: #fff
@@ -9438,7 +9190,8 @@ button.dropdown.secondary:after {
     display: inline-block;
     line-height: 0;
     max-width: 100%;
-    transition: all 200ms ease-out
+    -webkit-transition: all 200ms ease-out;
+            transition: all 200ms ease-out
 }
 
 .th:hover,
@@ -9522,13 +9275,11 @@ button.dropdown.secondary:after {
 @keyframes rotate {
     from {
         -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg)
     }
     to {
         -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         transform: rotate(360deg)
     }
@@ -9570,10 +9321,14 @@ button.dropdown.secondary:after {
 
 .slideshow-wrapper .preloader {
     border-radius: 1000px;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: rotate;
-    animation-timing-function: linear;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
     border-color: #555 #fff;
     border: solid 3px;
     display: block;
@@ -9599,9 +9354,7 @@ button.dropdown.secondary:after {
     padding: 0;
     position: relative;
     -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0)
 }
 
@@ -10451,7 +10204,8 @@ ul.pagination li {
 ul.pagination li a,
 ul.pagination li button {
     border-radius: 3px;
-    transition: background-color 300ms ease-out;
+    -webkit-transition: background-color 300ms ease-out;
+            transition: background-color 300ms ease-out;
     background: none;
     color: #999;
     display: block;
@@ -11593,9 +11347,7 @@ blockquote p {
     left: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
-    -o-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     max-height: 100%;
     max-width: 100%
@@ -12096,9 +11848,6 @@ blockquote p {
     position: relative;
     width: 100%;
     -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -ms-transition: -ms-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
     transition: transform 500ms ease
 }
 
@@ -12196,7 +11945,8 @@ blockquote p {
     padding: 0;
     position: relative;
     text-indent: 2.1875rem;
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     width: 2.8125rem
 }
 
@@ -12227,14 +11977,13 @@ blockquote p {
     overflow-y: auto;
     position: absolute;
     top: 0;
-    transition: transform 500ms ease 0s;
+    -webkit-transition: -webkit-transform 500ms ease 0s;
+            transition: transform 500ms ease 0s;
     width: 15.625rem;
     z-index: 1001;
     -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate(-100%, 0);
     -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     left: 0
 }
@@ -12254,14 +12003,13 @@ blockquote p {
     overflow-y: auto;
     position: absolute;
     top: 0;
-    transition: transform 500ms ease 0s;
+    -webkit-transition: -webkit-transform 500ms ease 0s;
+            transition: transform 500ms ease 0s;
     width: 15.625rem;
     z-index: 1001;
     -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate(100%, 0);
     -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     right: 0
 }
@@ -12294,7 +12042,8 @@ ul.off-canvas-list li a {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     padding: 0.66667rem;
-    transition: background 300ms ease
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease
 }
 
 ul.off-canvas-list li a:hover {
@@ -12307,10 +12056,8 @@ ul.off-canvas-list li a:active {
 
 .move-right>.inner-wrap {
     -webkit-transform: translate3d(15.625rem, 0, 0);
-    -moz-transform: translate3d(15.625rem, 0, 0);
     -ms-transform: translate(15.625rem, 0);
     -ms-transform: translate3d(15.625rem, 0, 0);
-    -o-transform: translate3d(15.625rem, 0, 0);
     transform: translate3d(15.625rem, 0, 0)
 }
 
@@ -12318,7 +12065,8 @@ ul.off-canvas-list li a:active {
     -webkit-backface-visibility: hidden;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
     -webkit-tap-highlight-color: transparent;
     background: rgba(255, 255, 255, 0.2);
     bottom: 0;
@@ -12338,10 +12086,8 @@ ul.off-canvas-list li a:active {
 
 .move-left>.inner-wrap {
     -webkit-transform: translate3d(-15.625rem, 0, 0);
-    -moz-transform: translate3d(-15.625rem, 0, 0);
     -ms-transform: translate(-15.625rem, 0);
     -ms-transform: translate3d(-15.625rem, 0, 0);
-    -o-transform: translate3d(-15.625rem, 0, 0);
     transform: translate3d(-15.625rem, 0, 0)
 }
 
@@ -12349,7 +12095,8 @@ ul.off-canvas-list li a:active {
     -webkit-backface-visibility: hidden;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
     -webkit-tap-highlight-color: transparent;
     background: rgba(255, 255, 255, 0.2);
     bottom: 0;
@@ -12371,8 +12118,6 @@ ul.off-canvas-list li a:active {
 .offcanvas-overlap .right-off-canvas-menu {
     -ms-transform: none;
     -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
     transform: none;
     z-index: 1003
 }
@@ -12381,7 +12126,8 @@ ul.off-canvas-list li a:active {
     -webkit-backface-visibility: hidden;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
     -webkit-tap-highlight-color: transparent;
     background: rgba(255, 255, 255, 0.2);
     bottom: 0;
@@ -12402,8 +12148,6 @@ ul.off-canvas-list li a:active {
 .offcanvas-overlap-left .right-off-canvas-menu {
     -ms-transform: none;
     -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
     transform: none;
     z-index: 1003
 }
@@ -12412,7 +12156,8 @@ ul.off-canvas-list li a:active {
     -webkit-backface-visibility: hidden;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
     -webkit-tap-highlight-color: transparent;
     background: rgba(255, 255, 255, 0.2);
     bottom: 0;
@@ -12433,8 +12178,6 @@ ul.off-canvas-list li a:active {
 .offcanvas-overlap-right .left-off-canvas-menu {
     -ms-transform: none;
     -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
     transform: none;
     z-index: 1003
 }
@@ -12443,7 +12186,8 @@ ul.off-canvas-list li a:active {
     -webkit-backface-visibility: hidden;
     box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
     -webkit-tap-highlight-color: transparent;
     background: rgba(255, 255, 255, 0.2);
     bottom: 0;
@@ -12491,16 +12235,11 @@ ul.off-canvas-list li a:active {
     width: 15.625rem;
     z-index: 1002;
     -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate(-100%, 0);
     -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     left: 0;
     -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -ms-transition: -ms-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
     transition: transform 500ms ease
 }
 
@@ -12535,10 +12274,8 @@ ul.off-canvas-list li a:active {
 .left-submenu.offcanvas-overlap-right,
 .left-submenu.offcanvas-overlap {
     -webkit-transform: translate3d(0%, 0, 0);
-    -moz-transform: translate3d(0%, 0, 0);
     -ms-transform: translate(0%, 0);
     -ms-transform: translate3d(0%, 0, 0);
-    -o-transform: translate3d(0%, 0, 0);
     transform: translate3d(0%, 0, 0)
 }
 
@@ -12556,16 +12293,11 @@ ul.off-canvas-list li a:active {
     width: 15.625rem;
     z-index: 1002;
     -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate(100%, 0);
     -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     right: 0;
     -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -ms-transition: -ms-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
     transition: transform 500ms ease
 }
 
@@ -12600,10 +12332,8 @@ ul.off-canvas-list li a:active {
 .right-submenu.offcanvas-overlap-left,
 .right-submenu.offcanvas-overlap {
     -webkit-transform: translate3d(0%, 0, 0);
-    -moz-transform: translate3d(0%, 0, 0);
     -ms-transform: translate(0%, 0);
     -ms-transform: translate3d(0%, 0, 0);
-    -o-transform: translate3d(0%, 0, 0);
     transform: translate3d(0%, 0, 0)
 }
 
@@ -13572,7 +13302,8 @@ kbd {
     text-indent: 100%;
     width: 4rem;
     height: 2rem;
-    transition: left 0.15s ease-out
+    -webkit-transition: left 0.15s ease-out;
+            transition: left 0.15s ease-out
 }
 
 .switch input {
@@ -13598,13 +13329,9 @@ kbd {
     top: .25rem;
     width: 1.5rem;
     -webkit-transition: left 0.15s ease-out;
-    -moz-transition: left 0.15s ease-out;
-    -o-transition: translate3d(0, 0, 0);
     transition: left 0.15s ease-out;
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
@@ -15046,6 +14773,16 @@ th.hide-for-touch {
     display: none !important
 }
 
+#section_home .promo-a img {
+  border-radius: 10px;
+}
+
+.big-pompadur .pagelink {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
 @media print {
     * {
         background: transparent !important;
@@ -15179,14 +14916,12 @@ th.hide-for-touch {
         display: inline-block;
         width: 100%;
     }
+
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
-@media only screen and (min-width: 40.063em) {
-    .our-features {
-        color: white;
-    }
+@media only screen and (min-width: 40.063em) { 
 }
 /* min-width 641px, medium screens */
 
@@ -15210,14 +14945,15 @@ th.hide-for-touch {
         margin: 7px 7px;
         text-align: left;
     }
+
+    #section_home .features-a {
+        /* font-size: 10px; */
+    }
 }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) {
-    .sitemenu-li {
-        width: auto;
-    }
+@media only screen and (min-width: 64.063em) { 
 }
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
