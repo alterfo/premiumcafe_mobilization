@@ -721,6 +721,8 @@ a.pagebutton .icon {
     -khtml-user-select: none;
     -ms-user-select: none;
         user-select: none;
+          
+    font-size: 20px;
 }
 
 .sitemenu-img1,
@@ -739,12 +741,12 @@ a.pagebutton .icon {
 }
 
 .sitemenu-a {
-    display: block;
+    /* display: block; */
     padding: 10px 3px;
     color: #FF9;
     text-align: center;
-    font-family: Pompadur;
     font-style: normal;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .sitemenu-a:visited {
@@ -883,6 +885,7 @@ a.pagebutton .icon {
     filter: alpha(opacity=0);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    /*color: #46A9EF;*/
 }
 
 .sitemenu-tools-a:after {
@@ -899,6 +902,7 @@ a.pagebutton .icon {
     filter: alpha(opacity=0);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    /*color: #46A9EF;*/
 }
 
 .sitemenu-tools-a:hover:before,
@@ -14916,6 +14920,15 @@ th.hide-for-touch {
         display: inline-block;
         width: 100%;
     }
+    .sitemenu-contacts {
+      background: none;
+      box-shadow: none;
+    }
+
+    .sitemenu-homelink {
+      background: none;
+      box-shadow: none;
+    }
 
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -14949,6 +14962,16 @@ th.hide-for-touch {
     #section_home .features-a {
         /* font-size: 10px; */
     }
+
+    .sitemenu-contacts {
+      background: none;
+      box-shadow: none;
+    }
+
+    .sitemenu-homelink {
+      background: none;
+      box-shadow: none;
+    }
 }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
@@ -14970,3 +14993,20 @@ th.hide-for-touch {
 // XXLarge screens
 @media only screen and (min-width: 120.063em) {}
 /* min-width 1921px, xxlarge screens */
+
+
+
+a:active, a:visited {
+  color: #C96;
+}
+a {
+  color: #C96;
+  outline: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  color: #FF0;
+}
