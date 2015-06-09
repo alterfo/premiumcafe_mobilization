@@ -1030,10 +1030,10 @@ a.pagebutton .icon {
 }
 
 .sitefooter {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
     font-size: 14px;
     -moz-border-radius: 20px 20px 0 0;
     -webkit-border-radius: 20px 20px 0 0;
@@ -1389,6 +1389,7 @@ a.pagebutton .icon {
 #section_home .features-a {
     display: inline-block;
     /* height: 31px; */
+    width: 100%;
     padding: 11px;
     
     color: #FFC;
@@ -15194,7 +15195,10 @@ th.hide-for-touch {
     #section_home .features-ul {
         width: 100%;
         margin: 0 auto;
-    }
+    
+        /* height: auto; */
+        z-index: 10;
+}
     #section_home .features-ul li:first-child {
         /* display: none; */
     }
