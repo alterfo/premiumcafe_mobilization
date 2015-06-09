@@ -611,7 +611,7 @@ a.pagebutton .icon {
 .sitemenu {
   /* /* height: 105px; */ */
   margin-bottom: 30px;
-  padding: 0 20px 0 140px;
+  /* padding: 0 20px 0 140px; */
   z-index: 5;
   font-size: 20px;
   line-height: 1;
@@ -624,9 +624,9 @@ a.pagebutton .icon {
   text-shadow: 0 1px 1px #000;
 }
 .sitemenu-homelink {
-  position: absolute;
-  left: 20px;
-  top: 0;
+  /* position: absolute; */
+  /* left: 20px; */
+  /* top: 0; */
   display: block;
   padding: 12px 10px;
   background: url("http://premiumcafe.ru/assets/img/bg2red.jpg") 0 bottom;
@@ -750,7 +750,7 @@ a.pagebutton .icon {
   box-shadow: 0 1px 5px #000;
 }
 .sitemenu-phones {
-  text-align: right;
+  /* text-align: right; */
 }
 .sitemenu-phones .sitemenu-extra-phones {
   height: 54px;
