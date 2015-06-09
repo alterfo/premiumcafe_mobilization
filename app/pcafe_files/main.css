@@ -1404,6 +1404,8 @@ a.pagebutton .icon {
 #section_home .features-a.active {
     color: #FF0;
     background: rgba(255, 100, 0, 0.3);
+    transition: all .03s linear;
+    /* transform: scale(1.1); */
 }
 
 #section_home .features-a:hover .icon-hover,
