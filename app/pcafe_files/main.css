@@ -1090,14 +1090,15 @@ a.pagebutton .icon {
   cursor: pointer;
 }
 #section_home .promo-ul {
+  text-align: center;
   position: relative;
   margin: 0;
   padding: 0;
   float: left;
-  width: 670px;
-  height: 400px;
+  /* width: 670px; */
+  height: auto;
   list-style: none;
-  background: url("http://premiumcafe.ru/assets/img/promo.jpg") no-repeat center center;
+  /* background: url("http://premiumcafe.ru/assets/img/promo.jpg") no-repeat center center; */
   border: 1px solid #210;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1107,15 +1108,17 @@ a.pagebutton .icon {
   background-clip: padding-box;
 }
 #section_home .promo-li {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
   width: 100%;
+  /* max-width: 300px; */
   height: 100%;
 }
 #section_home .promo-a {
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  /* max-width: 500px; */
   height: 100%;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1125,14 +1128,17 @@ a.pagebutton .icon {
   background-clip: padding-box;
 }
 #section_home .features-ul {
-  float: left;
-  margin: 0 0 0 10px;
-  padding: 0;
-  vertical-align: top;
-  width: 256px;
+  /* float: left; */
+  /* margin: 0 0 0 10px; */
+  /* padding: 0; */
+  /* vertical-align: top; */
+  /* width: 256px; */
   list-style: none;
 }
 #section_home .features-li {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
   border: 1px solid #210;
   border-bottom: none;
   background: url("http://premiumcafe.ru/assets/img/bg2red.jpg") repeat;
@@ -1180,8 +1186,8 @@ a.pagebutton .icon {
 }
 #section_home .features-a {
   display: block;
-  height: 31px;
-  padding: 7px 9px;
+  /* height: 31px; */
+  /* padding: 7px 9px; */
   color: #FFC;
   font-size: 16px;
   line-height: 15px;
@@ -1189,7 +1195,7 @@ a.pagebutton .icon {
   -webkit-box-shadow: inset 0 1px 2px rgba(250,200,150,0.3);
   box-shadow: inset 0 1px 2px rgba(250,200,150,0.3);
 }
-#section_home .features-a:hover,
+#section_home .features-li:hover,
 #section_home .features-a:focus,
 #section_home .features-a.active {
   color: #FF0;
@@ -4418,10 +4424,18 @@ meta.foundation-version{font-family:"/5.5.2/"}meta.foundation-mq-small{font-fami
     width: 30%;
   }
 
+  #section_home .features-li {
+    display:inline-block;
+    width: 100%;
+  }
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .our-features {
+    color: white;
+  }
 
  } /* min-width 641px, medium screens */
 
@@ -4430,6 +4444,24 @@ meta.foundation-version{font-family:"/5.5.2/"}meta.foundation-mq-small{font-fami
   .sitemenu-li {
     width: 30%;
   }
+
+  #section_home .features-ul {
+    width:100%;
+  
+    margin: 0 auto;
+}
+
+  #section_home .features-ul li:first-child {
+    /* display: none; */
+  }
+
+  #section_home .features-li {
+    width: 30%;
+    height: 4em;
+  
+    margin: 7px 7px;
+    text-align: left;
+}
  } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
@@ -4437,6 +4469,8 @@ meta.foundation-version{font-family:"/5.5.2/"}meta.foundation-mq-small{font-fami
   .sitemenu-li {
     width: auto;
   }
+
+ 
 } /* min-width 1025px, large screens */
 
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
