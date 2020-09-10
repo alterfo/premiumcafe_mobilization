@@ -16,7 +16,7 @@
     "template"
   ],
   "dependencies": {
-    "lodash": "^3.9.1"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "gulp-coffee": "~1.4.1",
